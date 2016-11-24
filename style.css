@@ -1,0 +1,84 @@
+.container {
+    width: 15%;
+    background: #7a7a7a;
+    margin: auto;
+    padding: 25px;
+    border: 3px solid #141310;
+    border-radius: 40px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+.screen {
+    width: 85%;
+    text-align: right;
+    padding: 12px;
+    font-size: 25px;
+}
+
+.button-equal {
+    background-color: #297dc4;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 130px;
+    height: 60px;
+}
+
+.button-clear {
+    background-color: #c44a4d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 95px;
+    height: 60px;
+}
+
+
+.button:hover {
+    background-color: #73e600;
+}
+.button:active {
+    background: #003300;
+}
+
+.button-clear:hover {
+    background: #ff6600;
+}
+
+.button-clear:active {
+    background: #991f00;
+}
+
+.button-equal:hover {
+    background: #00BDFF;
+}
+
+.button-equal:active {
+    background: #004d80;
+}

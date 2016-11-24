@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+<div class="container ">
+
+    <div class="row">
+        <input class="screen" type="text" id="screen"  readonly><br>
+    </div>
+    <div class="row">
+        <button class="button-clear" id="clean" type="button" onclick="clean('screen')">C</button>
+        <button class="button-clear" id="return" type="button" onclick="clearLast('screen')">R</button>
+        <button class="button" id="divide" type="button" onclick="appendOperand('screen', '/')">&divide</button>
+    </div>
+    <div class="row">
+        <button class="button" id="seven" type="button" onclick="appendDigit('screen', '7')">7</button>
+        <button class="button" id="eight" type="button" onclick="appendDigit('screen', '8')">8</button>
+        <button class="button" id="nine" type="button" onclick="appendDigit('screen', '9')">9</button>
+        <button class="button" id="multi" type="button" onclick="appendOperand('screen', '*')">&times</button>
+    </div>
+    <div class="row">
+        <button class="button" id="four" type="button" onclick="appendDigit('screen', '4')">4</button>
+        <button class="button" id="five" type="button" onclick="appendDigit('screen', '5')">5</button>
+        <button class="button" id="six" type="button" onclick="appendDigit('screen', '6')">6</button>
+        <button class="button" id="subst" type="button" onclick="appendOperand('screen', '-')">-</button>
+    </div>
+    <div class="row">
+        <button class="button" id="1" type="button" onclick="appendDigit('screen', '1')">1</button>
+        <button class="button" id="two" type="button" onclick="appendDigit('screen', '2')">2</button>
+        <button class="button" id="three" type="button" onclick="appendDigit('screen', '3')">3</button>
+        <button class="button" id="add" type="button" onclick="appendOperand('screen', '+')">+</button>
+    </div>
+    <div class="row">
+        <button class="button" id="zero" type="button" onclick="appendDigit('screen', '0')" >0</button>
+        <button class="button" id="dot" type="button" onclick="appendDot('screen')">.</button>
+        <button class="button-equal" id="equal" type="button" onclick="calculateExpression('screen')">=</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
