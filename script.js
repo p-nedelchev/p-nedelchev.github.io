@@ -3,18 +3,17 @@
  */
 function calculateExpression(elementId) {
     var expression = document.getElementById(elementId).value;
-    document.getElementById(elementId).value = eval(expression);
+    if(expression.length != 0) {
+        document.getElementById(elementId).value = eval(expression);
+        return;
+    }
 }
 
-// function append(elementId, value) {
-//    document.getElementById(elementId).value += value;
-// }
-
-function clean(elementId) {
+function cleanDisplay(elementId) {
     document.getElementById(elementId).value = "";
 }
 
-function clearLast(elementId) {
+function clearLastChar(elementId) {
     var value = document.getElementById(elementId).value;
     document.getElementById(elementId).value = value.slice(0, value.length - 1);
 }
@@ -27,7 +26,7 @@ function appendDigit(elementId, digit) {
 function appendOperand(elementId, operand) {
     var currentExpression = document.getElementById(elementId).value;
     var lastChar = currentExpression.slice(-1);
-    if(/(-|\+|\*|\/)/.test(lastChar) || currentExpression.length == 0) {
+    if(/(\.|-|\+|\*|\/)/.test(lastChar) || currentExpression.length == 0) {
         document.getElementById(elementId).value = currentExpression;
         return;
     }
